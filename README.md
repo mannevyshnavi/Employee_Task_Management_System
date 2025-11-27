@@ -92,6 +92,7 @@ DEPLOYMENT
 | Backend API Docs     | `https://employee-task-management-system-6jvu.onrender.com/docs` |
 
  LOGIN PAGE && DASHBOARD
+ 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8acd55c4-c92c-407c-bff6-1c4082c10271" />
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/72683249-eee8-4d06-a7f4-33a0f8cf9259" />
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/84f6f6a4-f1eb-424a-b83b-f2b21f772cfa" />
