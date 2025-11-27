@@ -3,8 +3,8 @@ from typing import List
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from database import Base, engine, get_db
-from  backend import models, schemas
+from backend.database import Base, engine, get_db
+from backend import models, schemas
 from backend.auth import router as auth_router, get_current_user
 
 from fastapi.middleware.cors import CORSMiddleware
