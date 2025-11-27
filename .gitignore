@@ -1,0 +1,20 @@
+# Ignore virtual environments
+backend/venv/
+
+# Python cache
+__pycache__/
+**/*.pyc
+
+# SQLite database
+backend/app.db
+frontend/app.db
+
+# Environment variables
+.env
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db

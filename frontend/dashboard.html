@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard | Employee Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>Dashboard</h2>
+    <button onclick="logout()" class="danger-btn">Logout</button>
+</div>
+
+<div class="container">
+
+    <!-- EMPLOYEES -->
+    <div class="section">
+        
+        <!-- Create Employee -->
+        <div class="card">
+            <h3>Create Employee</h3>
+            <input id="emp-name" placeholder="Employee Name">
+            <input id="emp-email" placeholder="Employee Email">
+            <input id="emp-role" placeholder="Employee Role">
+            <input id="emp-status" placeholder="Employee Status">
+            <button class="primary-btn" onclick="createEmployee()">Create Employee</button>
+        </div>
+
+        <!-- Employees List -->
+        <div class="card">
+            <h3>Employees List</h3>
+            <button class="secondary-btn" onclick="loadEmployees()">Refresh Employees</button>
+            <ul id="employee-list"></ul>
+        </div>
+
+        <!-- Employee Edit Modal -->
+        <div class="card hidden" id="employee-edit-section">
+            <h3>Edit Employee</h3>
+            <input id="edit-emp-name">
+            <input id="edit-emp-email">
+            <input id="edit-emp-role">
+            <input id="edit-emp-status">
+            <button class="primary-btn" onclick="updateEmployee()">Update</button>
+            <button class="secondary-btn" onclick="closeEmployeeEdit()">Cancel</button>
+        </div>
+
+    </div>
+
+
+    <!-- TASKS -->
+    <div class="section">
+
+        <!-- Create Task -->
+        <div class="card">
+            <h3>Create Task</h3>
+            <input id="task-title" placeholder="Task Title">
+            <input id="task-desc" placeholder="Task Description">
+            <input id="task-status" placeholder="Task Status">
+            <input id="task-date" placeholder="Due Date (YYYY-MM-DD)">
+            <input id="task-emp-id" placeholder="Employee ID">
+            <button class="primary-btn" onclick="createTask()">Create Task</button>
+        </div>
+
+        <!-- Tasks List -->
+        <div class="card">
+            <h3>Tasks List</h3>
+            <button class="secondary-btn" onclick="loadTasks()">Refresh Tasks</button>
+            <ul id="task-list"></ul>
+        </div>
+
+        <!-- Task Edit Modal -->
+        <div class="card hidden" id="task-edit-section">
+            <h3>Edit Task</h3>
+            <input id="edit-task-title">
+            <input id="edit-task-desc">
+            <input id="edit-task-status">
+            <input id="edit-task-date">
+            <input id="edit-task-emp-id">
+            <button class="primary-btn" onclick="updateTask()">Update</button>
+            <button class="secondary-btn" onclick="closeTaskEdit()">Cancel</button>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- ======================================================== -->
+    <!-- NEW EXTRA QUERY CARDS ADDED HERE (REQUESTED BY YOU)     -->
+    <!-- ======================================================== -->
+
+    <div class="section">
+
+        <!-- 1️⃣ Employee → Tasks -->
+        <div class="card">
+            <h3>Get Tasks of Employee</h3>
+            <input id="query-emp-id" placeholder="Enter Employee ID">
+            <button onclick="getTasksOfEmployee()" class="secondary-btn">Get Tasks</button>
+            <ul id="emp-task-results"></ul>
+        </div>
+
+        <!-- 2️⃣ Task → Employee -->
+        <div class="card">
+            <h3>Get Employee of Task</h3>
+            <input id="query-task-id" placeholder="Enter Task ID">
+            <button onclick="getEmployeeOfTask()" class="secondary-btn">Get Employee</button>
+            <ul id="task-emp-results"></ul>
+        </div>
+
+        <!-- 3️⃣ Task → Employee Name -->
+        <div class="card">
+            <h3>Get Employee Name of Task</h3>
+            <input id="query-task-id-name" placeholder="Enter Task ID">
+            <button onclick="getEmployeeNameOfTask()" class="secondary-btn">Get Employee Name</button>
+            <p id="task-emp-name-result"></p>
+        </div>
+
+        <!-- 4️⃣ Employee → Task Titles -->
+        <div class="card">
+            <h3>Get Task Titles of Employee</h3>
+            <input id="query-emp-id-titles" placeholder="Enter Employee ID">
+            <button onclick="getTaskTitlesOfEmployee()" class="secondary-btn">Get Task Titles</button>
+            <ul id="emp-task-titles-results"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

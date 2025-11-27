@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Employee Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+    <h1>Employee Task Management</h1>
+
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('login')">Login</button>
+        <button class="tab" onclick="showTab('register')">Register</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div id="login" class="tab-content">
+        <input id="log-email" placeholder="Email">
+        <input id="log-password" type="password" placeholder="Password">
+        <button class="primary-btn" onclick="login()">Login</button>
+    </div>
+
+    <!-- REGISTER FORM -->
+    <div id="register" class="tab-content hidden">
+        <input id="reg-name" placeholder="Name">
+        <input id="reg-email" placeholder="Email">
+        <input id="reg-password" type="password" placeholder="Password">
+        <button class="primary-btn" onclick="registerUser()">Register</button>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
