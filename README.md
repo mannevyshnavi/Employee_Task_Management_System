@@ -49,25 +49,8 @@ DEPLOYMENT
 
 📁 Project Structure
 
-Employee_Task_Management_System/
-│
-├── backend/
-│   ├── __init__.py
-│   ├── auth.py              # Login / Register / JWT
-│   ├── database.py          # DB engine, Base, session
-│   ├── main.py              # FastAPI application entrypoint
-│   ├── models.py            # SQLAlchemy models
-│   ├── schemas.py           # Pydantic schemas
-│   └── utils.py             # Password hashing/verification
-│
-├── frontend/
-│   ├── index.html           # Login/Register page
-│   ├── dashboard.html       # Employee & Task dashboard
-│   ├── style.css
-│   └── app.js               # Frontend logic + API requests
-│
-├── requirements.txt
-└── README.md
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/8e2dde74-6d7f-49e6-adb3-8abf62962093" />
+
 
 
 🚀 Setup Steps
@@ -109,16 +92,16 @@ Employee_Task_Management_System/
 | Backend API Docs     | `https://employee-task-management-system-6jvu.onrender.com/docs` |
 
  LOGIN PAGE && DASHBOARD
-<img width="2420" height="1584" alt="image" src="https://github.com/user-attachments/assets/8acd55c4-c92c-407c-bff6-1c4082c10271" />
-<img width="1434" height="1039" alt="image" src="https://github.com/user-attachments/assets/72683249-eee8-4d06-a7f4-33a0f8cf9259" />
-<img width="2682" height="1348" alt="image" src="https://github.com/user-attachments/assets/84f6f6a4-f1eb-424a-b83b-f2b21f772cfa" />
-<img width="2655" height="1412" alt="image" src="https://github.com/user-attachments/assets/02c5f569-c37a-4ac6-ac85-13854fb633db" />
-<img width="1402" height="1219" alt="image" src="https://github.com/user-attachments/assets/0ebe2ec8-e57c-42a5-966c-14700fd1324b" />
-<img width="1293" height="1158" alt="image" src="https://github.com/user-attachments/assets/e636e7cb-955b-42e7-8319-deeb0e3e0b60" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8acd55c4-c92c-407c-bff6-1c4082c10271" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/72683249-eee8-4d06-a7f4-33a0f8cf9259" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/84f6f6a4-f1eb-424a-b83b-f2b21f772cfa" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/02c5f569-c37a-4ac6-ac85-13854fb633db" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0ebe2ec8-e57c-42a5-966c-14700fd1324b" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e636e7cb-955b-42e7-8319-deeb0e3e0b60" />
 
  FASTAPI SWAGGER UI
-<img width="2697" height="1541" alt="image" src="https://github.com/user-attachments/assets/961e04e8-0dce-4655-822f-c71e9166329c" />
-<img width="2654" height="1515" alt="image" src="https://github.com/user-attachments/assets/077035ce-446c-41fb-b86f-6d87b1ef9c7d" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/961e04e8-0dce-4655-822f-c71e9166329c" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/077035ce-446c-41fb-b86f-6d87b1ef9c7d" />
 
 📝 Assumptions
 
@@ -126,6 +109,7 @@ Employee_Task_Management_System/
 -> SQLite is used for simplicity; can be upgraded to PostgreSQL.
 -> Frontend is lightweight and uses only vanilla JavaScript.
 -> All task/employee relations follow a 1-to-many structure.
+
 
 BONUS FEATURES IMPLEMENTED
 
@@ -139,6 +123,7 @@ BONUS FEATURES IMPLEMENTED
 ✔ Clean UI with edit modals
 ✔ Fully deployed Frontend + Backend
 ✔ Well-structured FastAPI modular architecture
+
 
 👩‍💻 Author
 
